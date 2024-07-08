@@ -13,8 +13,10 @@ def screen_clicked(x, y):
     print('You pressed: x=' + str(x) + ', y=' + str(y))
     
     # 6. Call the turtle .penup() method
+    shell.penup()
     
     # 7. Move the turtle to a new location using .goto(x, y)
+    shell.goto(x,y)
 
 
 def turtle_clicked(x, y):
@@ -34,16 +36,23 @@ if __name__ == '__main__':
     window.setup(width=0.75, height=0.8, startx=0, starty=0)
     
     # 1. Make a new turtle
+    shell=turtle.Turtle()
     
     # 2. Make your turtle's shape 'turtle', .shape('turtle')
+    shell.shape('turtle')
+
     
     # 3. Set your turtle's color using .color('green') and .pencolor('blue')
+    shell.color('green')
+    shell.pencolor('blue')
+
     
     # 4. Set and new width, length, and outline of our turtle
     #    my_turtle.turtlesize(stretch_wid=10, stretch_len=10, outline=4)
+    shell.turtlesize(stretch_wid=10,stretch_len=10, outline=4)
 
     # 5. Uncomment the following line and replace 'my_turtle' with your turtle
-    # my_turtle.onclick(turtle_clicked)
+    shell.onclick(turtle_clicked)
 
 # ===================== DO NOT EDIT THE CODE BELOW ============================
     window.onclick(screen_clicked)

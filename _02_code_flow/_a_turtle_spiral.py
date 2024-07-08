@@ -14,20 +14,27 @@ if __name__ == '__main__':
     window.bgcolor('white')
     
     # Make a new turtle
+    noggin=turtle.Turtle
     
     # This code sets our shape to a turtle
-    
+    noggin.shape(turtle)
     # Set your turtle's speed (0=fastest, 1=slowest, 10=faster)
+    noggin.speed(10)
     
     # Set your turtle's color using .color('green')
+    noggin.color('green')
     
     # Use a loop to repeat a the code below 50 times
+    for i in range (50)
         
         # Set the turtle color to a random color
+        noggin.color()
 
         # Move the turtle (5*i) pixels. 'i' is the loop variable
-        
+         noggin.forward(5*i)
+
         # Turn the turtle (360/7) degrees to the right
+    noggin.right (360/7)
          
         # Change the turtle width to 'i' (the loop variable)
         
