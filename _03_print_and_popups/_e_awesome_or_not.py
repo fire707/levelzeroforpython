@@ -4,20 +4,29 @@ import random
 # Create an if-main code block, *hint, type main then ctrl+space to auto-complete
     
     # Make a new window variable, window = Tk()
+    window=Tk()
     
     # Hide the window using the window's .withdraw() method
+    window.withdraw()
 
     # 1. Make a variable equal to a positive number less than 4 using random.randInt(0, 3)
+    uplm=random.randite(0,3)
     
     # 2. Print your variable to the console
+    Print(uplm)
     
     # 3. Get the user to enter something that they think is awesome
+    youas=simpledialog.asktring(title='Greeter',prompt="Give me the answer 1-5")
     
     # 4. If your variable is  0
         # -- tell the user whatever they entered is awesome!
+        if youas==0:
+            messagebox.showinfo(message="awesome")
         
     # 5. If your variable is  1
         # -- tell the user whatever they entered is ok.
+        if youas==1
+            messagebox.showinfo
     
     # 6. If your variable is  2
         # -- tell the user whatever they entered is boring.
